@@ -1,8 +1,10 @@
 package data;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.ToString;
 
-@ToString
+@Data
 public class Person {
     public String name; // 姓名 公有
     protected String age;   // 年龄 保护

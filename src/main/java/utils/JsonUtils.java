@@ -18,11 +18,9 @@ public final class JsonUtils {
         return JSON.toJSONString(obj, true);
     }
 
+
     public static Student convertStrToObj(String str) {
         return JSON.parseObject(str, Student.class);
     }
-
-
-
 
 }

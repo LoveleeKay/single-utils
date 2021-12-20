@@ -1,9 +1,11 @@
 package utils;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.Temporal;
 
 public class TimeDateUtils {
 
@@ -29,6 +31,11 @@ public class TimeDateUtils {
     public static LocalDateTime parseStringToDateTime(String time, String format) {
         DateTimeFormatter df = DateTimeFormatter.ofPattern(format);
         return LocalDateTime.parse(time, df);
+    }
+
+    public static Duration computeTime(Temporal startInclusive, Temporal endExclusive) {
+        Duration duration = Duration.between(startInclusive, endExclusive);
+        return duration;
     }
 
     public static void main(String[] args) {
