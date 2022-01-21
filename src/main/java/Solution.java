@@ -1,25 +1,18 @@
-class Solution {
-    public void rotate(int[] nums, int k) {
-        int n = nums.length;
-        k = k % n;
-        int count = 0;
-        int start = 0;
-        while (count < n) {
-            int current = start;
-            int pre = nums[start];
-            do {
-                int next = (current + k) % n;
-                int temp = nums[next];
-                nums[next] = pre;
-                count++;
-                pre = temp;
-                current = next;
-            } while (start != current);
-            start++;
-        }
-    }
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.TreeSet;
 
-    public static void main(String[] args) {
-        new Solution().rotate(new int[]{1,2,3,4,5,6,7}, 3);
+class Solution {
+    public int thirdMax(int[] nums) {
+        Set<Integer> set = new TreeSet<>();
+        for (int num : nums) {
+            set.add(num);
+        }
+        int size = set.size();
+        if (set.size() >= 3) {
+            return new ArrayList<>(set).get(size - 3);
+        } else {
+            return new ArrayList<>(set).get(size - 1);
+        }
     }
 }

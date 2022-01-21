@@ -1,4 +1,4 @@
-package utils;
+package com.llys.utils;
 
 import java.time.Duration;
 import java.time.Instant;

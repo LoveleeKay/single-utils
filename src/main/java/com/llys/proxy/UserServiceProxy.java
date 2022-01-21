@@ -1,9 +1,8 @@
-package proxy;
+package com.llys.proxy;
 
-import service.UserService;
+import com.llys.service.UserService;
 
 import java.time.Instant;
-import java.time.LocalDateTime;
 import java.time.ZoneId;
 
 public class UserServiceProxy implements UserService {
@@ -12,11 +11,13 @@ public class UserServiceProxy implements UserService {
     public UserServiceProxy(UserService target) {
         this.target = target;
     }
+    @Override
     public void select() {
         before();
         target.select();    // 这里才实际调用真实主题角色的方法
         after();
     }
+    @Override
     public void update() {
         before();
         target.update();    // 这里才实际调用真实主题角色的方法

@@ -1,4 +1,4 @@
-package data;
+package com.llys.data;
 
 public class Employee extends Person {
     public static Integer totalNum = 0; // 员工数

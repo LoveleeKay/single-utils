@@ -1,10 +1,10 @@
-package utils;
+package com.llys.utils;
 
-import impl.UserServiceImpl;
-import proxy.LogInterceptor;
-import proxy.SelfLogHandler;
-import proxy.UserServiceProxy;
-import service.UserService;
+import com.llys.impl.UserServiceImpl;
+import com.llys.proxy.LogInterceptor;
+import com.llys.proxy.SelfLogHandler;
+import com.llys.proxy.UserServiceProxy;
+import com.llys.service.UserService;
 
 import java.time.Instant;
 

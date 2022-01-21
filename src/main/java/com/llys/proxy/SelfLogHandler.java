@@ -1,8 +1,4 @@
-package proxy;
-
-import impl.UserServiceImpl;
-import net.sf.cglib.proxy.Enhancer;
-import service.UserService;
+package com.llys.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

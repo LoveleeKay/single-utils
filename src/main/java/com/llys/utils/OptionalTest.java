@@ -1,6 +1,6 @@
-package utils;
+package com.llys.utils;
 
-import data.Student;
+import com.llys.data.Student;
 
 import java.util.HashMap;
 import java.util.Map;

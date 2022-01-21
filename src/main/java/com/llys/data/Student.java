@@ -1,4 +1,4 @@
-package data;
+package com.llys.data;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

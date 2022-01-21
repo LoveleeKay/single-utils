@@ -1,4 +1,4 @@
-package utils;
+package com.llys.utils;
 
 import cn.hutool.core.io.FileUtil;
 import cn.hutool.extra.qrcode.QrCodeException;
@@ -6,8 +6,6 @@ import cn.hutool.extra.qrcode.QrCodeUtil;
 import cn.hutool.extra.qrcode.QrConfig;
 
 import java.awt.*;
-import java.io.File;
-import java.io.IOException;
 import java.io.OutputStream;
 
 /**

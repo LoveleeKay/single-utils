@@ -1,10 +1,12 @@
-package data;
+package com.llys.data;
 
+import com.llys.annotion.Test;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.ToString;
 
 @Data
+@Test(value = "123", age = 10)
 public class Person {
     public String name; // 姓名 公有
     protected String age;   // 年龄 保护

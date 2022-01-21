@@ -1,4 +1,4 @@
-package utils;
+package com.llys.utils;
 
 import net.sourceforge.tess4j.ITesseract;
 import net.sourceforge.tess4j.Tesseract;

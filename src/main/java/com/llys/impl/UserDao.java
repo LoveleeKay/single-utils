@@ -1,4 +1,4 @@
-package impl;
+package com.llys.impl;
 
 public class UserDao {
     public void select() {
